@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="TableStyle.css">
+    <style>
+        .row{
+            background-color: rgb(214, 214, 136);
+        }
+    </style>
+</head>
+<body>
+    <div id="Header">
+        <img src="cloud.png" alt="error" id="Cloud1">
+        <br><br><hr style="width:60%">
+        <h1 id="TopHeading" style="text-align: center;">Table Illustration</h1>
+        <br><hr style="width:40%"><br><br>
+        <img src="cloud.png" alt="error" id="Cloud2"> 
+    </div>
+    <table style="margin:0 auto 0 auto; width:80%; border: 4px solid purple;">
+        <tbody>
+            <tr>
+                <th colspan="6" style="background-color: green; color:white;">MOST WICKETS IN TEST CRICKET</th>
+            </tr>
+            <tr class="row">
+                <th rowspan="2">RANK</th>
+                <th colspan="2">BOWLER NAME</th>
+                <th rowspan="2">COUNTRY</th>
+                <th rowspan="2">WICKETS TAKEN</th>
+                <th rowspan="2" style="padding-top: 50px;">AVG</th>
+            </tr>
+            <tr class="row">
+                <th>FIRST NAME</th>
+                <th>LAST NAME</th>
+            </tr>
+            
+            <tr style="background-color: rgb(115, 182, 115); color:white;">
+                <th>1</th>
+                <th style="text-align: left;">Muttiah</th>
+                <th style="text-align: left;">Muralitharan</th>
+                <th>SRILANKA</th>
+                <th>800</th>
+                <th>22.7</th>
+            </tr>
+        
+            <tr style="background-color:rgb(250, 250, 89)">
+                <td>2</td>
+                <td style="text-align: left;">Shane</td>
+                <td style="text-align: left;">Warne</td>
+                <td>AUSTRALIA</td>
+                <td>708</td>
+                <td>25.41</td>
+            </tr>
+            <tr style="background-color:rgb(148, 180, 223)">
+                <th>3</th>
+                <th style="text-align: left;">Anil</th>
+                <th style="text-align: left;">Kumble</th>
+                <th>INDIA</th>
+                <th>619</th>
+                <th>29.65</th>
+            </tr>
+            <tr style="background-color:rgb(250, 48, 48); color:white;">
+                <td>4</td>
+                <td style="text-align: left;">James</td>
+                <td style="text-align: left;">Anderson</td>
+                <td>ENGLAND</td>
+                <td>614</td>
+                <td>26.46</td>
+            </tr>
+            <tr style="background-color:rgb(250, 250, 89)">
+                <td>5</td>
+                <td style="text-align: left;">Glen</td>
+                <td style="text-align: left;">McGrath</td>
+                <td>AUSTRALIA</td>
+                <td>563</td>
+                <td>21.64</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

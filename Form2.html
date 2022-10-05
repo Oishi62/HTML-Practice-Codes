@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Background.css">
+</head>
+<body>
+    <div id="Header">
+        <img src="cloud.png" alt="error" id="Cloud1">
+        <br><br><hr style="width:60%">
+        <h1 id="TopHeading" style="text-align: center;">Form Illustration</h1>
+        <hr style="width:40%"><br><br>
+        <img src="cloud.png" alt="error" id="Cloud2"> 
+    </div>
+    <form action="responce.html" style="padding:50px" method="GET">
+        <h3 style="text-align: center; background-color: black; color:white;">Text Box</h3><br><br>
+        <label for="">Enter your name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type ="text" name="uname" size="30" maxlength="50" autocomplete="on" placeholder="Mandatory" tabindex="1" value="" required="required" /> <br/><br/>
+
+        <h3 style="text-align: center; background-color: black; color:white;">Password</h3><br><br>
+        Password:&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type ="password" name="passwd" size="10" maxlength="10" minlength="6" placeholder="Min 6 Chars" tabindex="2" value=""/><br/><br/>
+
+        <h3 style="text-align: center; background-color: black; color:white;">Calender</h3><br><br>
+        <label for="">Date Of Birth</label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <input type="date" tabindex="3" name="DOB"><br><br><br>
+
+        <h3 style="text-align: center; background-color: black; color:white;">Drop Down lists</h3><br><br>
+        <select>
+            <option>Month</option>
+            <option>January</option>
+            <option>February</option>
+            <option >March</option>
+            <option>April</option>
+            <option>May</option>
+            <option>June</option>
+            <option>July</option>
+            <option>August</option>
+            <option>September</option>
+            <option>October</option>
+            <option>November</option>
+            <option selected>December</option>
+        </select>
+        <select>
+            <option>Year</option>
+            <option>2011</option>
+            <option>2012</option>
+            <option>2013</option>
+            <option>2014</option>
+            <option>2015</option>
+            <option>2016</option>
+            <option>2018</option>
+            <option>2019</option>
+            <option>2020</option>
+            <option selected>2021</option>
+        </select>
+        <select name="qualification">
+            <option value="PhD">PhD</option>
+            <option value="Masters" selected="selected">PG</option>
+            <option value="Graduate">Grad</option>
+            <option>Others</option>
+        </select><br><br>
+
+        <h3 style="text-align: center; background-color: black; color:white;">Radio Buttons</h3><br><br>
+        <label for="">Gender</label><br><br>
+        <input type="radio" name="gender" value="M" tabindex="5" >Male <input type="radio" name="gender" value="F" checked>Female <br><br>
+
+        <h3 style="text-align: center; background-color: black; color:white;">Emails</h3><br><br>
+        <label for="">Enter your email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="email" name="email"><br><br>
+
+        <h3 style="text-align: center; background-color: black; color:white;">Phone Number</h3><br><br>
+        <label for="">Enter your mobile number</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="tel" name="phone" placeholder="+91-xxxxxxxxxx" pattern="[+91]{3}-[0-9]{10}"><br><br>
+
+        <h3 style="text-align: center; background-color: black; color:white;">Color Pallete</h3><br><br>
+        <label for="">Choose your favourite color</label>
+        <input type="color" name="favcolor" value="#0000ff"><br><br>
+
+        <h3 style="text-align: center; background-color: black; color:white;">File Upload</h3><br><br>
+        <label for="">Upload file</label>
+        <input type="file" name="cv"><br><br>
+
+        <h3 style="text-align: center; background-color: black; color:white;">Only Numbers</h3><br><br>
+        <label for="">Choose a number</label>
+        <input type="number"><br><br>
+
+        <h3 style="text-align: center; background-color: black; color:white;">Text Area</h3><br><br>
+        <label for="">Any Comments</label><br>
+        <textarea rows="10" cols="60" maxlength="600" wrap="hard" name="comment"></textarea><br><br>
+
+        <h3 style="text-align: center; background-color: black; color:white;">Submit and Reset using Button tag</h3><br><br>
+        <pre>
+            <button type="submit" value="send" accesskey="s" ><u>S</u>ubmit </button>
+            
+            <button type="reset" value="reset" accesskey="r" ><u>R</u>eset </button>
+        </pre>
+
+        <h3 style="text-align: center; background-color: black; color:white;">Submit and Reset using input tag</h3><br><br>
+        <input type="submit" value="SUBMIT" accesskey="s"> <br/>
+        <input type="reset" value="RESET" accesskey="r">
+    </form>
+</body>
+</html>
